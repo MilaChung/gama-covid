@@ -1,0 +1,101 @@
+body {
+    background-image: url("img/corona.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-family: Libre Baskerville;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: rgba(8, 106, 135, 0.25);
+}
+
+#navbar div {
+    margin: 1% 1%
+}
+
+#navbar a {
+    text-decoration: unset;
+    color: white;
+}
+
+#contato {
+    border: 1px solid lightskyblue;
+    border-radius: 10px;
+    box-shadow: lightskyblue 2px 2px 7px;
+    margin: 1% 30%;
+    padding: 1%;
+    color: white;
+    background-color: rgba(8, 106, 135, 0.25);
+}
+
+#contato form {
+    margin: 1% 1%;
+}
+
+#contato h3 {
+    font-size: 40px;
+    text-align: center;
+}
+#contato label {
+    float: left;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+#contato button {
+    border-radius: 3px;
+    margin-top: 2%;
+    color: rgb(8, 106, 135);
+    padding: 1%;
+}
+
+#contato textarea {
+    height: 20%;
+    resize: vertical;
+    width: 100%;
+    padding: 2%;
+    border: white solid 1px;
+    border-radius: 4px; 
+}
+
+#contato input {
+    width: 100%;
+    padding: 2%;
+    border: white solid 1px;
+    border-radius: 4px;
+}
+
+#paginaInicial {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+#paginaInicial a {
+    text-decoration: unset;
+    color: rgb(8, 106, 135);    
+}
+
+#paginaInicial button {
+    border-radius: 3px;
+    font-size: 15px;
+    color:  rgb(8, 106, 135);
+}
+
+#footer {
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: rgba(8, 106, 135, 0.25);
+}

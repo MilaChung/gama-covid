@@ -1,0 +1,136 @@
+body {
+    background-image: url("img/corona.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-family: Libre Baskerville;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: rgba(8, 106, 135, 0.25);
+}
+
+#navbar div {
+    margin: 1% 1%
+}
+
+#navbar a {
+    text-decoration: unset;
+    color: white;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3% 5%;
+}
+
+.camila {
+    display: fixed;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.camila img {
+    width: 220%;
+    border-radius: 10px;
+    box-shadow: lightskyblue 2px 2px 7px;	
+}
+
+.descricao {
+    display: flex;
+    position: relative;
+    flex-direction: column; 
+    justify-content: space-between;
+    margin-top: 3.5%;
+    margin-right: 5%;
+    margin-left: 20%;
+}
+
+.descricao p {
+    border: 1px solid lightskyblue;
+    border-radius: 10px;
+    box-shadow: lightskyblue 2px 2px 7px;
+    padding: 1%;
+    color: white;
+    background-color: rgba(8, 106, 135, 0.25);
+    text-align: justify;
+    font-size: 120%;
+    line-height: 200%;
+}
+
+.descricao p:first-letter {
+    font-size: 200%;
+    font-weight: 900;
+  }
+
+#redesSociais {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    border: 1px solid lightskyblue;
+    border-radius: 10px;
+    box-shadow: lightskyblue 2px 2px 7px;
+    background-color: rgba(8, 106, 135, 0.25);
+}  
+
+.redes {
+    margin: 2% 2%;
+    padding: 1%;
+}
+
+.redes a { 
+    color: white;
+    font-size: 400%;
+    position: relative;
+}
+
+#paginaInicial {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#paginaInicial a {
+    text-decoration: unset;
+    color: rgb(8, 106, 135);    
+}
+
+#paginaInicial button {
+    border-radius: 3px;
+    font-size: 15px;
+    color:  rgb(8, 106, 135);
+}
+
+#footer {
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: rgba(8, 106, 135, 0.25);
+}
+
+.redesSociaisf {
+    display: flex;
+}  
+
+.redesf {
+    margin: 5% 10%;
+    padding: 2%;
+}
+
+.redesf a { 
+    color: white;
+    font-size: 200%;
+    position: relative;
+}
