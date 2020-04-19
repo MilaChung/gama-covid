@@ -64,11 +64,22 @@ a:hover {
     color: rgb(8, 106, 135);
 }
 
-#noticias {
-    margin-top: 10%;
-    margin-right: 4%;
-    margin-bottom: 4%;
-    margin-left: 4%;
+@media screen and (max-width: 1366px) {
+    #noticias {
+        margin-top: 15%;
+        margin-right: 4%;
+        margin-bottom: 4%;
+        margin-left: 4%;
+    } 
+}
+
+@media screen and (min-width: 1367px) {
+    #noticias {
+        margin-top: 10%;
+        margin-right: 4%;
+        margin-bottom: 4%;
+        margin-left: 4%;
+    } 
 }
 
 .noticia {
@@ -153,24 +164,27 @@ a:hover {
     .redesSociais {
         display: flex;
         position: relative;
-        left: 76%;
+        left: 80%;
     }  
+
+    .redes a { 
+        font-size: 200%;
+    }
 }
 
 @media screen and (min-width: 1367px) {
     .redesSociais {
         display: flex;
         position: relative;
-        left: 85%;
+        left: 83%;
     }  
-}
 
+    .redes a { 
+        font-size: 250%;
+    }
+}
 
 .redes {
     margin: 5% 10%;
     padding: 2%;
-}
-
-.redes a { 
-    font-size: 200%;
 }
