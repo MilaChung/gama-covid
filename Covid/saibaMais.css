@@ -1,6 +1,5 @@
 *, *:before, *:after {
     box-sizing: border-box;
-    color: white;
 }
 
 body {
@@ -8,6 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover; 
     font-family: Literata;
+    color: white;
 }
 
 #navbar {
@@ -51,12 +51,24 @@ body {
     margin-top: 2%;
 }
 
-.links {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin-top: 4%;
-    margin-right: 7%;
+@media screen and (max-width: 1366px) {
+    .links {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 4%;
+        margin-right: 7%;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .links {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 3%;
+        margin-right: 7%;
+    }
 }
 
 .links div {
@@ -70,12 +82,25 @@ a {
     font-size: 110%;
 }
 
+a {
+    color: white;
+}
+
+
 a:hover {
     color: rgb(8, 106, 135);
 }
 
-#noticias {
-    margin-top: 15%;
+@media screen and (max-width: 1366px) {
+    #noticias {
+        margin: 12% 15%;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    #noticias {
+        margin: 10% 5%;
+    }
 }
 
 .noticia {

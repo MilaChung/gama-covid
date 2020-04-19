@@ -46,12 +46,24 @@ body {
     margin-top: 2%;
 }
 
-.links {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin-top: 4%;
-    margin-right: 7%;
+@media screen and (max-width: 1366px) {
+    .links {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 4%;
+        margin-right: 7%;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .links {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 3%;
+        margin-right: 7%;
+    }
 }
 
 .links div {

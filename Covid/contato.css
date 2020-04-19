@@ -51,12 +51,24 @@ body {
     margin-top: 2%;
 }
 
-.links {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin-top: 4%;
-    margin-right: 7%;
+@media screen and (max-width: 1366px) {
+    .links {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 4%;
+        margin-right: 7%;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .links {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 3%;
+        margin-right: 7%;
+    }
 }
 
 .links div {
@@ -82,7 +94,7 @@ a:hover {
     margin: 12% 30%;
     padding: 1%;
     color: white;
-    background-color: rgba(8, 106, 135, 0.25);
+    background-color: rgba(8, 106, 135, 0.4);
 }
 
 #contato form {
@@ -99,19 +111,6 @@ a:hover {
     font-size: 20px;
 }
 
-#contato button {
-    background-color: rgba(181, 220, 233, 0.904);
-    border-radius: 5px;
-    box-shadow: lightskyblue 2px 2px 7px;
-    width: 12%;
-    height: 5%;
-    margin-top: 3%;
-    color: rgb(14, 88, 110);
-    padding: 1%;
-    position: relative;
-    left: 45%;
-}
-
 #contato textarea {
     height: 20%;
     resize: vertical;
@@ -126,6 +125,20 @@ a:hover {
     padding: 2%;
     border: white solid 1px;
     border-radius: 4px;
+}
+
+#contato button {
+    background-color: rgba(181, 220, 233, 0.904);
+    border-radius: 5px;
+    box-shadow: lightskyblue 2px 2px 7px;
+    width: 12%;
+    height: 5%;
+    margin-top: 3%;
+    color: rgb(14, 88, 110);
+    padding: 1%;
+    position: relative;
+    left: 45%;
+    font-weight: 700;
 }
 
 #footer {
