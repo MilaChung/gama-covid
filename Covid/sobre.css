@@ -1,36 +1,81 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url("img/corona.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
-    font-family: Libre Baskerville;
+    font-family: Literata;
+    color: white;
 }
 
 #navbar {
+    overflow: hidden;
     display: flex;
     position: fixed;
     z-index: 9999;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 10px;
     background-color: rgba(8, 106, 135, 0.25);
 }
 
-#navbar div {
-    margin: 1% 1%
+.logo {
+    position: relative;
+    left: 3%;
+    width: 500px;
+    height: 150px;
 }
 
-#navbar a {
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.logo a {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo h1 {
+    font-size: 250%;
+    margin-top: 2%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 4%;
+    margin-right: 7%;
+}
+
+.links div {
+    margin: 0 15;
+    display: inline-block;
+}
+
+a {
     text-decoration: unset;
     color: white;
+    font-weight: bold;
+    font-size: 110%;
 }
+
+a:hover {
+    color: rgb(8, 106, 135);
+}
+
 
 #sobre {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 3% 5%;
+    margin: 10% 5%;
 }
 
 .camila {
@@ -49,7 +94,7 @@ body {
     display: flex;
     position: relative;
     flex-direction: column; 
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 3.5%;
     margin-right: 5%;
     margin-left: 20%;
@@ -93,21 +138,22 @@ body {
     position: relative;
 }
 
-#paginaInicial {
+/* #paginaInicial {
     text-align: center;
     margin-bottom: 5%;
 }
 
 #paginaInicial a {
     text-decoration: unset;
-    color: rgb(8, 106, 135);    
+    color: rgb(8, 106, 135); 
 }
 
 #paginaInicial button {
+    background-color: rgba(181, 220, 233, 0.904);
     border-radius: 3px;
-    font-size: 15px;
-    color:  rgb(8, 106, 135);
-}
+    width: 6%;
+    height: 4%;
+} */
 
 #footer {
     display: flex;
@@ -120,17 +166,40 @@ body {
     background-color: rgba(8, 106, 135, 0.25);
 }
 
-.redesSociaisf {
+.copyright {
     display: flex;
-}  
+    position: relative;
+    left: 46%;
+    opacity: 0.7;
+    font-size: 80%;
+}
+
+
+@media screen and (max-width: 1366px) {
+    .redesSociaisf {
+        display: flex;
+        position: relative;
+        left: 80%;
+    }  
+
+    .redesf a { 
+        font-size: 200%;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .redesSociaisf {
+        display: flex;
+        position: relative;
+        left: 83%;
+    }  
+
+    .redesf a { 
+        font-size: 250%;
+    }
+}
 
 .redesf {
     margin: 5% 10%;
     padding: 2%;
-}
-
-.redesf a { 
-    color: white;
-    font-size: 200%;
-    position: relative;
 }

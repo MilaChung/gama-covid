@@ -1,57 +1,120 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url("img/corona.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
-    font-family: Libre Baskerville;
+    font-family: Literata;
+    color: white;
 }
 
 #navbar {
+    overflow: hidden;
     display: flex;
     position: fixed;
     z-index: 9999;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 10px;
     background-color: rgba(8, 106, 135, 0.25);
 }
 
-#navbar div {
-    margin: 1% 1%
+.logo {
+    position: relative;
+    left: 3%;
 }
 
-#navbar a {
+.logo {
+    position: relative;
+    left: 3%;
+    width: 500px;
+    height: 150px;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.logo a {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo h1 {
+    font-size: 250%;
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 1366px) {
+    .links {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 4%;
+        margin-right: 7%;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .links {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 3%;
+        margin-right: 7%;
+    }
+}
+
+.links div {
+    margin: 0 15;
+    display: inline-block;
+}
+
+a {
     text-decoration: unset;
     color: white;
+    font-weight: bold;
+    font-size: 110%;
 }
 
-#obrigada p{
-    border: 1px solid lightskyblue;
-    border-radius: 10px;
-    box-shadow: lightskyblue 2px 2px 7px;
-    margin: 1% 20%;
-    padding: 2%;
-    color: white;
-    background-color: rgba(8, 106, 135, 0.25);
-    font-size: 80px;
-    text-align: center;
+a:hover {
+    color: rgb(8, 106, 135);
 }
 
-#paginaInicial {
-    text-align: center;
-    margin-bottom: 1%;
+@media screen and (max-width: 1366px) {
+    #obrigada p{
+        border: 1px solid lightskyblue;
+        border-radius: 10px;
+        box-shadow: lightskyblue 2px 2px 7px;
+        margin: 15% 20%;
+        padding: 2%;
+        color: white;
+        background-color: rgba(8, 106, 135, 0.25);
+        font-size: 80px;
+        font-weight: 900;
+        text-align: center;
+    }
 }
 
-#paginaInicial a {
-    text-decoration: unset;
-    color: rgb(8, 106, 135);    
-}
-
-#paginaInicial button {
-    border-radius: 3px;
-    font-size: 15px;
-    color:  rgb(8, 106, 135);
+@media screen and (min-width: 1367px) {
+    #obrigada p{
+        border: 1px solid lightskyblue;
+        border-radius: 10px;
+        box-shadow: lightskyblue 2px 2px 7px;
+        margin: 25% 20%;
+        padding: 2%;
+        color: white;
+        background-color: rgba(8, 106, 135, 0.25);
+        font-size: 80px;
+        font-weight: 900;
+        text-align: center;
+    }
 }
 
 #footer {
@@ -63,4 +126,42 @@ body {
     right: 0;
     border-radius: 10px;
     background-color: rgba(8, 106, 135, 0.25);
+}
+
+.copyright {
+    display: flex;
+    position: relative;
+    left: 46%;
+    opacity: 0.7;
+    font-size: 80%;
+}
+
+
+@media screen and (max-width: 1366px) {
+    .redesSociais {
+        display: flex;
+        position: relative;
+        left: 80%;
+    }  
+
+    .redes a { 
+        font-size: 200%;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .redesSociais {
+        display: flex;
+        position: relative;
+        left: 83%;
+    }  
+
+    .redes a { 
+        font-size: 250%;
+    }
+}
+
+.redes {
+    margin: 5% 10%;
+    padding: 2%;
 }
